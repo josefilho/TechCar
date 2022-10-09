@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="whatsThis">
+   <string extracomment="Ações para clientes"/>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuClientes_F1">
+    <property name="title">
+     <string>Clientes(F1)</string>
+    </property>
+    <addaction name="actionCadastrarCliente"/>
+    <addaction name="actionAlterarCliente"/>
+    <addaction name="actionRemoverCliente"/>
+   </widget>
+   <widget class="QMenu" name="menuVendedores_F2">
+    <property name="title">
+     <string>Vendedores(F2)</string>
+    </property>
+    <addaction name="actionCadastrarVendedor"/>
+    <addaction name="actionEditarVendedor"/>
+    <addaction name="actionRemoverVendedor"/>
+   </widget>
+   <widget class="QMenu" name="menuCarros_F3">
+    <property name="title">
+     <string>Carros(F3)</string>
+    </property>
+    <widget class="QMenu" name="menuCadastrar">
+     <property name="title">
+      <string>Cadastrar</string>
+     </property>
+     <addaction name="actionCadastrarCarroNovo"/>
+     <addaction name="actionCadastrarCarroUsado"/>
+    </widget>
+    <addaction name="menuCadastrar"/>
+    <addaction name="separator"/>
+    <addaction name="actionVenderCarro"/>
+   </widget>
+   <widget class="QMenu" name="menuRelat_rios_F4">
+    <property name="title">
+     <string>Relatórios(F4)</string>
+    </property>
+    <addaction name="actionRelatorioVendas"/>
+    <addaction name="separator"/>
+    <addaction name="actionRelatorioCarrosNovos"/>
+    <addaction name="actionRelatorioCarrosUsados"/>
+   </widget>
+   <widget class="QMenu" name="menuConfigura_es">
+    <property name="title">
+     <string>Configurações</string>
+    </property>
+    <addaction name="actionTema"/>
+   </widget>
+   <addaction name="menuClientes_F1"/>
+   <addaction name="menuVendedores_F2"/>
+   <addaction name="menuCarros_F3"/>
+   <addaction name="menuRelat_rios_F4"/>
+   <addaction name="menuConfigura_es"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCadastrarCliente">
+   <property name="text">
+    <string>Cadastrar</string>
+   </property>
+  </action>
+  <action name="actionAlterarCliente">
+   <property name="text">
+    <string>Alterar</string>
+   </property>
+  </action>
+  <action name="actionRemoverCliente">
+   <property name="text">
+    <string>Remover</string>
+   </property>
+  </action>
+  <action name="actionCadastrarVendedor">
+   <property name="text">
+    <string>Cadastrar</string>
+   </property>
+  </action>
+  <action name="actionEditarVendedor">
+   <property name="text">
+    <string>Editar</string>
+   </property>
+  </action>
+  <action name="actionRemoverVendedor">
+   <property name="text">
+    <string>Remover</string>
+   </property>
+  </action>
+  <action name="actionVenderCarro">
+   <property name="text">
+    <string>Vender</string>
+   </property>
+  </action>
+  <action name="actionRelatorioVendas">
+   <property name="text">
+    <string>Vendas</string>
+   </property>
+  </action>
+  <action name="actionRelatorioCarrosNovos">
+   <property name="text">
+    <string>Carros Novos</string>
+   </property>
+  </action>
+  <action name="actionRelatorioCarrosUsados">
+   <property name="text">
+    <string>Carros Usados</string>
+   </property>
+  </action>
+  <action name="actionTema">
+   <property name="text">
+    <string>Tema</string>
+   </property>
+  </action>
+  <action name="actionCadastrarCarroNovo">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionCadastrarCarroUsado">
+   <property name="text">
+    <string>Usado</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
